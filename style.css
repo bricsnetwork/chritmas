@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  background-size: cover; /* Gambar mengisi seluruh layar */
+  background-position: center;
+  background-repeat: no-repeat; /* Menghindari gambar terulang */
+  animation: carousel 50s infinite; /* Animation for the background carousel */
+}
+
+@keyframes carousel {
+  0% {
+    background-image: url('assets/img/sin1.jpg');
+  }
+  10% {
+    background-image: url('assets/img/sin2.jpg');
+  }
+  20% {
+    background-image: url('assets/img/sin3.jpg');
+  }
+  30% {
+    background-image: url('assets/img/sin4.jpg');
+  }
+  40% {
+    background-image: url('assets/img/sin5.jpg');
+  }
+  50% {
+    background-image: url('assets/img/sin6.jpg');
+  }
+  60% {
+    background-image: url('assets/img/sin7.jpg');
+  }
+  70% {
+    background-image: url('assets/img/sin8.jpg');
+  }
+  80% {
+    background-image: url('assets/img/sin9.jpg');
+  }
+  90% {
+    background-image: url('assets/img/sin10.jpg');
+  }
+  100% {
+    background-image: url('assets/img/sin1.jpg');
+  }
+}
+
+.container {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+h1.animated-title {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: white;
+  background: linear-gradient(45deg, #ff6b6b, #ffac81, #ffb7b7);
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: textGlow 2s infinite alternate;
+  letter-spacing: 2px;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ffb7b7, 0 0 40px #ffb7b7;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ffb7b7, 0 0 50px #ffb7b7;
+  }
+}
+
+h2.signature {
+  font-size: 2.2em;
+  color: #fff;
+  font-family: 'Cursive', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4c4c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ff1e1e;
+}
+
+/* Footer Style */
+footer {
+  margin-top: auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 14px;
+}
